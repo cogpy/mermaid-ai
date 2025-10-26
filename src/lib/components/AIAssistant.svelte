@@ -1,10 +1,11 @@
 <script lang="ts">
-  import { Button } from '$/components/ui/button';
+  import { buttonVariants } from '$/components/ui/button';
   import * as Dialog from '$/components/ui/dialog';
   import { Input } from '$/components/ui/input';
   import { updateCode } from '$/util/state';
   import { logEvent } from '$/util/stats';
   import SparklesIcon from '~icons/material-symbols/auto-awesome-rounded';
+  import { Button } from '$/components/ui/button';
 
   let open = $state(false);
   let description = $state('');
@@ -106,11 +107,9 @@
 </script>
 
 <Dialog.Root bind:open>
-  <Dialog.Trigger asChild let:builder>
-    <Button builders={[builder]} variant="accent" size="sm">
-      <SparklesIcon />
-      AI Assistant
-    </Button>
+  <Dialog.Trigger class={buttonVariants({ variant: 'accent', size: 'sm' })}>
+    <SparklesIcon />
+    AI Assistant
   </Dialog.Trigger>
   <Dialog.Content class="max-w-2xl">
     <Dialog.Header>
