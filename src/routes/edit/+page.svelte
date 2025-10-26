@@ -1,5 +1,6 @@
 <script lang="ts">
   import Actions from '$/components/Actions.svelte';
+  import AIAssistant from '$/components/AIAssistant.svelte';
   import Card from '$/components/Card/Card.svelte';
   import DiagramDocButton from '$/components/DiagramDocumentationButton.svelte';
   import Editor from '$/components/Editor.svelte';
@@ -82,6 +83,7 @@
   {/snippet}
 
   <Navbar mobileToggle={isMobile ? mobileToggle : undefined}>
+    <AIAssistant />
     <Toggle bind:pressed={isHistoryOpen} size="sm">
       <HistoryIcon />
     </Toggle>
