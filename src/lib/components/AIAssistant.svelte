@@ -1,11 +1,10 @@
 <script lang="ts">
-  import { buttonVariants } from '$/components/ui/button';
+  import { Button, buttonVariants } from '$/components/ui/button';
   import * as Dialog from '$/components/ui/dialog';
   import { Input } from '$/components/ui/input';
   import { updateCode } from '$/util/state';
   import { logEvent } from '$/util/stats';
   import SparklesIcon from '~icons/material-symbols/auto-awesome-rounded';
-  import { Button } from '$/components/ui/button';
 
   let open = $state(false);
   let description = $state('');
