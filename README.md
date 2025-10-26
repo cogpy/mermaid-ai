@@ -8,9 +8,22 @@ Edit, preview and share mermaid charts/diagrams.
 ## Features
 
 - Edit and preview flowcharts, sequence diagrams, gantt diagrams in real time.
+- **AI-powered diagram generation**: Describe your diagram in natural language and let AI generate Mermaid code for you.
 - Save the result as a svg
 - Get a link to a viewer of the diagram so that you can share it with others.
 - Get a link to edit the diagram so that someone else can tweak it and send a new link back
+
+### AI Assistant
+
+The AI Assistant feature allows you to generate Mermaid diagrams from natural language descriptions. To use it:
+
+1. Click the "AI Assistant" button in the navbar
+2. Enter your OpenAI API key (stored locally in your browser for privacy)
+3. Select the type of diagram you want to create
+4. Describe your diagram in plain English
+5. Click "Generate Diagram" to create the Mermaid code
+
+**Note**: You'll need your own OpenAI API key to use this feature. Get one from [OpenAI Platform](https://platform.openai.com/api-keys). Your API key is stored only in your browser's local storage and is never sent to our servers.
 
 ## Live demo
 
